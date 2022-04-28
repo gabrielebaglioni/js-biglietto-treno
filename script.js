@@ -14,3 +14,16 @@ const minorenne = 18;
 const scontoanziano = 0.4;
 const scontominorenne = 0.2;
 
+
+let prezzo;
+if (eta >= anziano){
+   prezzo = (distanza * prezzoperkm)  - (distanza * prezzoperkm * scontoanziano);
+}
+else if (eta < minorenne){
+   prezzo = (distanza * prezzoperkm) - (distanza * prezzoperkm * scontominorenne);
+}
+else{
+   prezzo = distanza * prezzoperkm;
+}
+console.log(prezzo);
+
